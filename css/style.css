@@ -1,0 +1,13 @@
+h1{
+  text-align: center;
+  color: tomato;
+  font-size: 60px;
+}
+
+main {
+  font-size: 20px;
+  text-align: center;
+  border-style: dashed;
+  border-spacing: 2px;
+  display: block;
+}
