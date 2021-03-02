@@ -11,3 +11,20 @@ main {
   border-spacing: 2px;
   display: block;
 }
+ul{
+  color: #3399ff;
+  padding: 50px;
+  list-style-position: outside;
+  font-size: 20px;
+  list-style-type: square;
+
+}
+h3{
+  font-weight: bold;
+  font-size: 40px;
+  padding: 50px 20px 0px;
+  border-style: dashed;
+  border-spacing: 2px;
+  display: block;
+  color: rgb(53, 24, 35);
+}
