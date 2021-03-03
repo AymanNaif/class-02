@@ -1,22 +1,23 @@
 h1{
   text-align: center;
-  color: tomato;
+  color: #91091e;
   font-size: 60px;
 }
 
 main {
   font-size: 20px;
-  text-align: center;
-  border-style: dashed;
+  padding: 20px;
+  border-style:dashed;
   border-spacing: 2px;
   display: block;
 }
-ul{
-  color: #3399ff;
+ol{
+  color: #da723c;
   padding: 50px;
   list-style-position: outside;
   font-size: 20px;
-  list-style-type: square;
+  list-style-type: upper-roman;
+
 
 }
 h3{
@@ -26,5 +27,17 @@ h3{
   border-style: dashed;
   border-spacing: 2px;
   display: block;
-  color: rgb(53, 24, 35);
+  color: #c39e5c;
+}
+.mainlist{
+  color: #9b5151;
+  font-weight: bolder;
+  list-style-type: square;
+  margin: 5px
+}
+.sublist{
+  color: #e97878;
+  list-style-type: circle;
+  padding: 20px;
+  margin: 20px
 }
