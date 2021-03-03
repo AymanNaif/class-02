@@ -167,112 +167,30 @@ for(let i=0;i<3;i++){
 }
 alert('the answer is 100');
 
+alert('another game !! get ready ^_^ ');
 
-alert('another game !! get ready ^_^ , write the number of answer only');
-let QustionAnswers =[1,2,3];
-let input=parseInt(prompt('Qustion one : 1+1 = ?\n1) 2\n2) 8\n3) 5' ));
+let series=['Prison Break','Dark','Peaky Blinder','a casa de papel','When they see us','Ganga star of berlin','Gangs of landon'];
+let goodanswer=0;
 let score=0;
+let userright=true;
 
-for(let i=0;i<5;i++){
-  if (input===parseInt(QustionAnswers[0])) {
-    score=score+1;
-    alert('easy !! LOL ');
-    break;
+let qanswer= prompt('write the name of my best series:');
+while(goodanswer < 6){
+  for (let i=0; i< series.length; i++){
+    if(qanswer=== series[i]){
+      alert('Amazing !! , this one of my favourit sereis');
+      goodanswer=6;
+      score=score+1;
+      userright=false;
+      break;
+    }
   }
-  else {
-    input=parseInt(prompt('Wrong !! try again please \nQustion one : 1+1 = ?\n1) 2\n2) 8\n3) 5' ));
+  goodanswer++;
+  if( goodanswer < 6 && userright===true) {
+    qanswer= prompt('its good series , but not of my favourit \n pleaes try again :');
   }
-}
-alert('the answer is 1');
-
-
-let inpu=parseInt(prompt('Qustion two : Where are the pyramids located?\n1) Jordan\n2) Germany\n3) Egypt' ));
-
-for(let i=0;i<5;i++){
-  if (inpu===parseInt(QustionAnswers[2])) {
-    score=score+1;
-    alert('AMAZING , correct Answer ');
-    break;
-  }
-  else {
-    inpu=parseInt(prompt('Wrong !! try again please \nQustion two : Where are the pyramids located?\n1) Jordan\n2) Germany\n3) Egypt' ));
+  if(goodanswer > 6 && userright===true){
+    alert('You have lost all of your attempts , my favourite sereies are: Prison Break, Dark,Peaky Blinder, a casa de papel, When they see us,Ganga star of berlin,Gangs of landon');
   }
 }
-alert('the answer is 3');
-
-
-let inp=parseInt(prompt('Qustion three : What is strawberry color?\n1) blue\n2) red\n3) black' ));
-
-for(let i=0;i<5;i++){
-  if (inp===parseInt(QustionAnswers[1])) {
-    score=score+1;
-    alert('yeeeeah thats right ');
-    break;
-  }
-  else {
-    inp=parseInt(prompt('Wrong !! try again please \nQustion three : What is strawberry color?\n1) blue\n2) red\n3) black' ));
-  }
-}
-alert('the answer is 3');
-
-
-let inw=parseInt(prompt('Qustion four : who is messi?\n1) football player\n2) actor\n3) teacher' ));
-
-for(let i=0;i<5;i++){
-  if (inw===parseInt(QustionAnswers[0])) {
-    score=score+1;
-    alert('yeeeeah thats right , the GOAT ');
-    break;
-  }
-  else {
-    inw=parseInt(prompt('Wrong !! try again please \nQustion four : who is messi?\n1) football player\n2) actor\n3) teacher' ));
-  }
-}
-alert('the answer is 1');
-
-
-
-let inwr=parseInt(prompt('Qustion five : more than club !\n1) Realbites\n2) Alwehdat\n3) Barcalona' ));
-
-for(let i=0;i<5;i++){
-  if (inwr===parseInt(QustionAnswers[2])) {
-    score=score+1;
-    alert('yeeeeah thats right ');
-    break;
-  }
-  else {
-    inwr=parseInt(prompt('Wrong !! try again please \nQustion five : more than club !\n1) Realbites\n2) Alwehdat\n3) Barcalona' ));
-  }
-}
-alert('the answer is 3');
-
-let inwre=parseInt(prompt('Qustion six : what the color of banana !\n1) yellow\n2) white\n3) red' ));
-
-for(let i=0;i<5;i++){
-  if (inwre===parseInt(QustionAnswers[0])) {
-    score=score+1;
-    alert('yeeeeah thats right ');
-    break;
-  }
-  else {
-    inwre=parseInt(prompt('Wrong !! try again please \nQustion six : what the color of banana !\n1) yellow\n2) white\n3) red' ));
-  }
-}
-alert('the answer is 1');
-
-let inwrq=parseInt(prompt('bones ^_^ Qustion seven : do you like markdown file ?!\n1) sure(wrong answer)\n2) nooooooo!!\n3) yes(wrong answer)' ));
-
-for(let i=0;i<5;i++){
-  if (inwrq===parseInt(QustionAnswers[1])) {
-    score=score+1;
-    alert('hehehe correct ');
-    break;
-  }
-  else {
-    inwrq=parseInt(prompt('Wrong !! try again please \nbones ^_^ Qustion seven : do you like markdown file ?!\n1) sure(wrong answer)\n2) nooooooo!!\n3) yes(wrong answer)' ));
-  }
-}
-alert('the answer is 2');
-
-alert('your score is '+score+'/7');
-
+alert('well done '+yourname+' \nyour score is '+score+'/7');
