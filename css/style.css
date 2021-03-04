@@ -1,5 +1,10 @@
+body {
+ background-color: rgb(230, 224, 224);
+}
 h1{
-  text-align: center;
+  margin-left: 500px;
+  margin-top: 50px;
+  margin-bottom: 20px;
   color: #91091e;
   font-size: 60px;
 }
@@ -27,17 +32,26 @@ h3{
   border-style: dashed;
   border-spacing: 2px;
   display: block;
-  color: #c39e5c;
+  color: #6b5021;
 }
 .mainlist{
-  color: #9b5151;
+  color: #743a3a;
   font-weight: bolder;
   list-style-type: square;
   margin: 5px
 }
 .sublist{
-  color: #e97878;
+  color: #ff5b5b;
   list-style-type: circle;
   padding: 20px;
   margin: 20px
+}
+img{
+  margin-left: 420px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 400px;
+  border-style:dashed;
+  border-spacing: 2px;
+
 }
